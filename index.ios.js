@@ -18,7 +18,7 @@ export default class AwesomeMovie extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Welcome to Awesome Movie😊
         </Text>
         <RecommendMovie></RecommendMovie>
         <Text style={styles.instructions}>
@@ -43,7 +43,8 @@ const styles = StyleSheet.create({
   welcome: {
     fontSize: 20,
     textAlign: 'center',
-    margin: 10,
+    marginTop: 30,
+    marginBottom: 10,
   },
   instructions: {
     textAlign: 'center',
