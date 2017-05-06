@@ -42,7 +42,7 @@ export default class AwesomeMovie extends Component {
          icon={{uri: icons.newest}}
          selected={currentPart=='1'?true:false}
          onPress={()=>this._onPressPart1()}>
-         <Nav url="/movie/in_theaters" title="热映电影-北京"></Nav>
+         <Nav url="/movie/in_theaters" title="热映电影"></Nav>
        </TabBarIOS.Item>
       <TabBarIOS.Item
         title="最佳"

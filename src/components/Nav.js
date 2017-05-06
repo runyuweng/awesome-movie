@@ -14,8 +14,6 @@ export default class Nav extends Component {
   render(){
     return (
       <NavigatorIOS
-        barTintColor='#23527C'
-        titleTextColor='white'
         initialRoute={{
           component: MovieList,
           title: this.props.title,

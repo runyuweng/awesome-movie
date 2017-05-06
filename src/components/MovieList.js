@@ -5,13 +5,14 @@ import {
   Text,
   View,
   ListView,
-  Image
+  Image,
+  TouchableHighlight
 } from 'react-native';
+import MovieDetail from './MovieDetail';
 
 export default class MovieList extends Component {
   constructor(props) {
     super(props);
-    console.log(props);
     var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
       dataSource: ds.cloneWithRows(
@@ -21,13 +22,11 @@ export default class MovieList extends Component {
   }
 
   componentDidMount(){
-    console.log(123123123);
     fetch(`https://api.douban.com/v2/${this.props.route.url}`, {
         method: "GET"
     })
     .then((res)=>res.json())
     .then((data)=>{
-      console.log(data);
       var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
       this.setState({
         dataSource: ds.cloneWithRows(data.subjects)
@@ -40,23 +39,34 @@ export default class MovieList extends Component {
       enableEmptySections={true}
       style={styles.list}
       dataSource={this.state.dataSource}
-      renderRow={(rowData) => <View style={styles.item}>
-        <Text style={styles.title}>{rowData.title?rowData.title:''}</Text>
-        <View style={styles.content}>
-          <View style={styles.img}>
-            <Image
-              style={styles.icon}
-              source={{uri:rowData.images.large?rowData.images.large:''}}
-            />
-          </View>
-          <View style={styles.word}>
-            <Text style={styles.wordItem}>导演：{rowData.directors?rowData.directors.map((value)=>{return value.name+'  '}):''}</Text>
-            <Text style={styles.wordItem}>演员：{rowData.casts?rowData.casts.map((value)=>{return value.name+'  '}):''}</Text>
-            <Text style={styles.wordItem}>评分：{rowData.rating?rowData.rating.average+'分':''}</Text>
-            <Text style={styles.wordItem}>分类：{rowData.genres?rowData.genres.map((value)=>{return value+'  '}):''}</Text>
+      renderRow={(rowData) => <TouchableHighlight
+        underlayColor='#E9EAED'
+        activeOpacity={0.9}
+        onPress={()=>{
+          this.props.navigator.push({
+            component: MovieDetail,
+            title: rowData.title,
+            id: rowData.id
+          })
+        }}>
+        <View style={styles.item}>
+          <Text style={styles.title}>{rowData.title?rowData.title:''}</Text>
+          <View style={styles.content}>
+            <View style={styles.img}>
+              <Image
+                style={styles.icon}
+                source={{uri:rowData.images.large?rowData.images.large:''}}
+              />
+            </View>
+            <View style={styles.word}>
+              <Text style={styles.wordItem}>导演：{rowData.directors?rowData.directors.map((value)=>{return value.name+'  '}):''}</Text>
+              <Text style={styles.wordItem}>演员：{rowData.casts?rowData.casts.map((value)=>{return value.name+'  '}):''}</Text>
+              <Text style={styles.wordItem}>评分：{rowData.rating?rowData.rating.average+'分':''}</Text>
+              <Text style={styles.wordItem}>分类：{rowData.genres?rowData.genres.map((value)=>{return value+'  '}):''}</Text>
+            </View>
           </View>
         </View>
-      </View>}
+      </TouchableHighlight>}
     />
     );
   }
