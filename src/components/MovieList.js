@@ -6,6 +6,7 @@ import {
   View,
   ListView,
   Image,
+  ActivityIndicator,
   TouchableHighlight
 } from 'react-native';
 import MovieDetail from './MovieDetail';
@@ -13,11 +14,9 @@ import MovieDetail from './MovieDetail';
 export default class MovieList extends Component {
   constructor(props) {
     super(props);
-    var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
-      dataSource: ds.cloneWithRows(
-        []
-      ),
+      loading:true,
+      dataSource: {}
     };
   }
 
@@ -29,50 +28,63 @@ export default class MovieList extends Component {
     .then((data)=>{
       var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
       this.setState({
+        loading:false,
         dataSource: ds.cloneWithRows(data.subjects)
       })
     })
   }
   render() {
+    const {loading, dataSource} = this.state;
     return (
-      <ListView
-      enableEmptySections={true}
-      style={styles.list}
-      dataSource={this.state.dataSource}
-      renderRow={(rowData) => <TouchableHighlight
-        underlayColor='#E9EAED'
-        activeOpacity={0.9}
-        onPress={()=>{
-          this.props.navigator.push({
-            component: MovieDetail,
-            title: rowData.title,
-            id: rowData.id
-          })
-        }}>
-        <View style={styles.item}>
-          <Text style={styles.title}>{rowData.title?rowData.title:''}</Text>
-          <View style={styles.content}>
-            <View style={styles.img}>
-              <Image
-                style={styles.icon}
-                source={{uri:rowData.images.large?rowData.images.large:''}}
-              />
+      <View style={styles.container}>
+        {loading?
+          <ActivityIndicator/>:
+          <ListView
+          enableEmptySections={true}
+          style={styles.list}
+          dataSource={dataSource}
+          renderRow={(rowData) => <TouchableHighlight
+            underlayColor='#E9EAED'
+            activeOpacity={0.9}
+            onPress={()=>{
+              this.props.navigator.push({
+                component: MovieDetail,
+                title: rowData.title,
+                id: rowData.id
+              })
+            }}>
+            <View style={styles.item}>
+              <Text style={styles.title}>{rowData.title?rowData.title:''}</Text>
+              <View style={styles.content}>
+                <View style={styles.img}>
+                  <Image
+                    style={styles.icon}
+                    source={{uri:rowData.images.large?rowData.images.large:''}}
+                  />
+                </View>
+                <View style={styles.word}>
+                  <Text style={styles.wordItem}>导演：{rowData.directors?rowData.directors.map((value)=>{return value.name+'  '}):''}</Text>
+                  <Text style={styles.wordItem}>演员：{rowData.casts?rowData.casts.map((value)=>{return value.name+'  '}):''}</Text>
+                  <Text style={styles.wordItem}>评分：{rowData.rating?rowData.rating.average+'分':''}</Text>
+                  <Text style={styles.wordItem}>分类：{rowData.genres?rowData.genres.map((value)=>{return value+'  '}):''}</Text>
+                </View>
+              </View>
             </View>
-            <View style={styles.word}>
-              <Text style={styles.wordItem}>导演：{rowData.directors?rowData.directors.map((value)=>{return value.name+'  '}):''}</Text>
-              <Text style={styles.wordItem}>演员：{rowData.casts?rowData.casts.map((value)=>{return value.name+'  '}):''}</Text>
-              <Text style={styles.wordItem}>评分：{rowData.rating?rowData.rating.average+'分':''}</Text>
-              <Text style={styles.wordItem}>分类：{rowData.genres?rowData.genres.map((value)=>{return value+'  '}):''}</Text>
-            </View>
-          </View>
-        </View>
-      </TouchableHighlight>}
-    />
+          </TouchableHighlight>}
+        />}
+    </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
+  container:{
+    width:'100%',
+    height:'100%',
+    justifyContent:'center',
+    alignItems:'center',
+    paddingTop:65
+  },
   list:{
     backgroundColor:'#E9EAED',
     padding:10,
