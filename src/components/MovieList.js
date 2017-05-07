@@ -15,7 +15,7 @@ export default class MovieList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      loading:true,
+      loadingPage:true,
       dataSource: {}
     };
   }
@@ -28,16 +28,16 @@ export default class MovieList extends Component {
     .then((data)=>{
       var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
       this.setState({
-        loading:false,
+        loadingPage:false,
         dataSource: ds.cloneWithRows(data.subjects)
       })
     })
   }
   render() {
-    const {loading, dataSource} = this.state;
+    const {loadingPage, dataSource} = this.state;
     return (
       <View style={styles.container}>
-        {loading?
+        {loadingPage?
           <ActivityIndicator/>:
           <ListView
           enableEmptySections={true}

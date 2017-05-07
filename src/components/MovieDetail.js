@@ -7,15 +7,21 @@ import {
   ListView,
   NavigatorIOS,
   ActivityIndicator,
-  ScrollView
+  ScrollView,
+  Modal,
+  TouchableHighlight,
+  Button
 } from 'react-native';
 
 export default class MovieDetail extends Component {
   constructor(props){
     super(props);
     this.state = {
-      loading:true,
-      data:{}
+      showModal: false,
+      loadingPage:true,
+      loadingCast:true,
+      data:{},
+      currentCast:{}
     }
   }
   componentDidMount(){
@@ -25,28 +31,78 @@ export default class MovieDetail extends Component {
     .then((res)=>res.json())
     .then((data)=>{
       this.setState({
-        loading:false,
+        loadingPage:false,
         data: data
       })
       console.log(data);
     })
   }
-  render(){
-    const {loading, data} = this.state;
+  fetchCast(id){
+    console.log('id',id);
+    this.setState({showModal:true},()=>{
+      fetch(`https://api.douban.com/v2/movie/celebrity/${id}`, {method: "GET"})
+      .then((res)=>res.json())
+      .then((data)=>{
+        this.setState({currentCast:data},()=>{
+          this.setState({loadingCast:false})
+        })
+      })
+    });
 
-    const castsList = (data.casts?data.casts:[]).map((value,i)=><View style={styles.castItem} key={i}>
+  }
+  render(){
+    const {showModal, loadingPage, data, currentCast, loadingCast} = this.state;
+
+    const castsList = (data.casts?data.casts:[]).map((value,i)=><TouchableHighlight
+      key={i}
+      underlayColor='transparent'
+      activeOpacity={0.9}
+      onPress={()=>this.fetchCast(value.id)}>
+      <View style={styles.castItem}>
         <Image style={styles.castImage} source={{uri:value.avatars?value.avatars.large:''}}/>
         <Text style={styles.castName}>{value.name?value.name:''}</Text>
-      </View>)
-    console.log('castsList',castsList);
+      </View>
+    </TouchableHighlight>)
+
+
 
     return (
       <View>
-        {loading?
-          <View style={styles.loading}>
+        {loadingPage?
+          <View style={styles.loadingPage}>
             <ActivityIndicator/>
           </View>:
           <ScrollView style={{backgroundColor:'#E9EAED'}}>
+            <Modal
+              animationType={"fade"}
+              transparent={true}
+              visible={showModal}
+              onRequestClose={() => {alert("Modal has been closed.")}}
+              >
+              <TouchableHighlight
+                activeOpacity={0}
+                underlayColor="transparent"
+                onPress={()=>{
+                  this.setState({
+                    showModal:false,
+                    loadingCast:true,
+                    currentCast:{}
+                  })}
+                }>
+                <View style={styles.modal}>
+                  {loadingCast?<ActivityIndicator/>:
+                    <View>
+                    <Image
+                      style={styles.imgHover}
+                      source={{uri:currentCast.avatars?currentCast.avatars.large:''}}
+                    />
+                    <Text style={styles.castInfo}>姓名：{currentCast.name?currentCast.name:''}</Text>
+                    <Text style={styles.castInfo}>本名：{currentCast.name_en?currentCast.name_en:''}</Text>
+                    <Text style={styles.castInfo}>出生地：{currentCast.born_place?currentCast.born_place:''}</Text>
+                  </View>}
+                </View>
+              </TouchableHighlight>
+            </Modal>
             <View style={styles.content}>
               <View style={styles.banner}>
               <Image style={styles.bg} source={require('../assets/img/banner.png')}>
@@ -66,7 +122,6 @@ export default class MovieDetail extends Component {
               <Text style={styles.sectionItem}>导演：{data.directors?data.directors.map((value)=>value.name+' '):''}</Text>
               <Text style={styles.sectionItem}>评分：{data.rating?data.rating.average:''}</Text>
               <Text style={styles.sectionItem}>年份：{data.year?data.year:''}</Text>
-
             </View>
 
             <View style={styles.section}>
@@ -93,7 +148,7 @@ export default class MovieDetail extends Component {
 }
 
 const styles = StyleSheet.create({
-  loading:{
+  loadingPage:{
     height:'100%',
     alignItems:'center',
     justifyContent:'center',
@@ -106,6 +161,13 @@ const styles = StyleSheet.create({
     flexDirection:'column',
     alignItems:'center',
     backgroundColor:'#E9EAED',
+  },
+  modal:{
+    width:'100%',
+    height:'100%',
+    justifyContent:'center',
+    alignItems:'center',
+    backgroundColor:'rgba(0, 0, 0, 0.8)'
   },
   banner:{
     width:'100%',
@@ -166,6 +228,10 @@ const styles = StyleSheet.create({
     width:70,
     height:80
   },
+  castInfo:{
+    color:'#fff',
+    marginTop:2,
+  },
   bg:{
     height:220,
     width:'100%',
@@ -182,5 +248,9 @@ const styles = StyleSheet.create({
   img:{
     width:138,
     height:192,
+  },
+  imgHover:{
+    width:260,
+    height:380,
   }
 })
