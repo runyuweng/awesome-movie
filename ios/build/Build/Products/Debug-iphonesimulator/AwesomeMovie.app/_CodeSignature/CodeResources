@@ -223,7 +223,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4Herdp4M9c4U61mG3vYKrinWmSo=
+		xRfUsS9Vx7zyI3ej9pDbjY33ycw=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -239,15 +239,27 @@
 		</data>
 		<key>PlugIns/AwesomeMovieTests.xctest/AwesomeMovieTests</key>
 		<data>
-		YYVbEweP/U2Uccq+j4JVIK8joUw=
+		uExzdP/qYXqjlP88NCZejDs0wjU=
 		</data>
 		<key>PlugIns/AwesomeMovieTests.xctest/Info.plist</key>
 		<data>
-		QhILz9I+FTA11mQP4p6Rimuq6P4=
+		nRrQ0pKXEN/9uQolAxKZnhLZKtA=
 		</data>
 		<key>PlugIns/AwesomeMovieTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
-		RP8+jzzQmrOeIWi+ywxxk1VNqb4=
+		KDGXhu3k5T/abVY5g0riznAK+VA=
+		</data>
+		<key>assets/src/assets/img/banner.png</key>
+		<data>
+		ij6qMiFLridmGbDQu3PgeCcfm00=
+		</data>
+		<key>index.ios.jsbundle</key>
+		<data>
+		PKfntKWIS3lVWYCyvv03kluU3aA=
+		</data>
+		<key>index.ios.jsbundle.meta</key>
+		<data>
+		8dsPhiu9Yaq8sOZnVVmBYjVnLbU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -863,33 +875,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YYVbEweP/U2Uccq+j4JVIK8joUw=
+			uExzdP/qYXqjlP88NCZejDs0wjU=
 			</data>
 			<key>hash2</key>
 			<data>
-			DX+AqZxc83nOAFdsrnb9Ioh8lAtV0gFaiCjpJXftqoE=
+			vF3fY47tYFiJ+9NOz23xHaXcLU64uJRpnpNwT8Wlph4=
 			</data>
 		</dict>
 		<key>PlugIns/AwesomeMovieTests.xctest/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QhILz9I+FTA11mQP4p6Rimuq6P4=
+			nRrQ0pKXEN/9uQolAxKZnhLZKtA=
 			</data>
 			<key>hash2</key>
 			<data>
-			9GAWm53Wy33C0oZnQSfFu64rhmZNIySIl7LDc1o59ic=
+			QlOnPM0/n9diwarnNaKTZmZaw+UVJuRKDArhDUkxDP0=
 			</data>
 		</dict>
 		<key>PlugIns/AwesomeMovieTests.xctest/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RP8+jzzQmrOeIWi+ywxxk1VNqb4=
+			KDGXhu3k5T/abVY5g0riznAK+VA=
 			</data>
 			<key>hash2</key>
 			<data>
-			u0bTBrjYByBjXdICdBQg4ikjIHLAly3p28KUw/q//3Q=
+			Zm0E+HKStBRbVwlyD/aqtpCWzt/qzx9gCpA3uboghyw=
+			</data>
+		</dict>
+		<key>assets/src/assets/img/banner.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ij6qMiFLridmGbDQu3PgeCcfm00=
+			</data>
+			<key>hash2</key>
+			<data>
+			GoGxWEzOBLNLk4DUvDso3UDxPayb/i/cn18d+B9+ip8=
+			</data>
+		</dict>
+		<key>index.ios.jsbundle</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PKfntKWIS3lVWYCyvv03kluU3aA=
+			</data>
+			<key>hash2</key>
+			<data>
+			lWPHBWGzWXrtyHaXGHRDoT3L2d9hp2uUV8MHclbB8cw=
+			</data>
+		</dict>
+		<key>index.ios.jsbundle.meta</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8dsPhiu9Yaq8sOZnVVmBYjVnLbU=
+			</data>
+			<key>hash2</key>
+			<data>
+			DVVRB/sDF7HjkSXuADGLrCOLyavPNafl93SySnCiEgY=
 			</data>
 		</dict>
 	</dict>
