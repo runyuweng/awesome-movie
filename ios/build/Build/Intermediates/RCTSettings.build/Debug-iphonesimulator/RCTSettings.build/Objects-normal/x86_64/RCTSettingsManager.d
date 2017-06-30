@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/Settings/RCTSettingsManager.m \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/Settings/RCTSettingsManager.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/Settings/RCTSettingsManager.m \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/Settings/RCTSettingsManager.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \

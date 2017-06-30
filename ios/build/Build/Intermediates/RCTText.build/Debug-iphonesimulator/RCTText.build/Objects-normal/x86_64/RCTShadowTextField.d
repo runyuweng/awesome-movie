@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/Text/RCTShadowTextField.m \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/Text/RCTShadowTextField.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/Text/RCTShadowTextField.m \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/Text/RCTShadowTextField.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \

@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheetManager.m \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheetManager.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/ActionSheetIOS/RCTActionSheetManager.m \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/ActionSheetIOS/RCTActionSheetManager.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \

@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/Text/RCTTextView.m \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/Text/RCTTextView.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/Text/RCTTextView.m \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/Text/RCTTextView.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTView.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
@@ -26,8 +26,8 @@ dependencies: \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUIManager.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTViewManager.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/Text/RCTShadowText.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/Text/RCTShadowText.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/Text/RCTText.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/Text/RCTTextSelection.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/Text/RCTUITextView.h
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/Text/RCTText.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/Text/RCTTextSelection.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/Text/RCTUITextView.h

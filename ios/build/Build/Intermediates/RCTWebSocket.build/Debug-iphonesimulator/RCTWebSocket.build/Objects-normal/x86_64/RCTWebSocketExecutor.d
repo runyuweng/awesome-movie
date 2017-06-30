@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/WebSocket/RCTWebSocketExecutor.m \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/WebSocket/RCTWebSocketExecutor.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/WebSocket/RCTWebSocketExecutor.m \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/WebSocket/RCTWebSocketExecutor.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptExecutor.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
@@ -20,4 +20,4 @@ dependencies: \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/WebSocket/RCTSRWebSocket.h
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/WebSocket/RCTSRWebSocket.h

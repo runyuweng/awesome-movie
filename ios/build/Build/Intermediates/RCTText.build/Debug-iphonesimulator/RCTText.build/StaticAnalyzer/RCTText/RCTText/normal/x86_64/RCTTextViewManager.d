@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/Text/RCTTextViewManager.m \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/Text/RCTTextViewManager.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/Text/RCTTextViewManager.m \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/Text/RCTTextViewManager.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTViewManager.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
@@ -26,7 +26,7 @@ dependencies: \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFont.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/Text/RCTConvert+Text.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/Text/RCTShadowTextView.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/Libraries/Text/RCTTextView.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/Text/RCTConvert+Text.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/Text/RCTShadowTextView.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/Libraries/Text/RCTTextView.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTView.h

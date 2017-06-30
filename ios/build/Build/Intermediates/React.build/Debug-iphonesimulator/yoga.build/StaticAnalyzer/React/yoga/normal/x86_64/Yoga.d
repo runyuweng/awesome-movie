@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/ReactCommon/yoga/yoga/Yoga.c \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/ReactCommon/yoga/yoga/YGNodeList.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/ReactCommon/yoga/yoga/YGMacros.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/ReactCommon/yoga/yoga/Yoga.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/ReactCommon/yoga/yoga/YGEnums.h
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/ReactCommon/yoga/yoga/Yoga.c \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/ReactCommon/yoga/yoga/YGNodeList.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/ReactCommon/yoga/yoga/YGMacros.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/ReactCommon/yoga/yoga/Yoga.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/ReactCommon/yoga/yoga/YGEnums.h

@@ -1,31 +1,31 @@
 dependencies: \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Base/RCTBatchedBridge.m \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Base/RCTAssert.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Base/RCTDefines.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Base/RCTBridge+Private.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Base/RCTBridge.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Base/RCTBridgeModule.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Base/RCTFrameUpdate.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Base/RCTInvalidating.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Base/RCTBridgeMethod.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Base/RCTConvert.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Views/RCTAnimationType.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Views/RCTBorderStyle.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Base/RCTLog.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Base/RCTUtils.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Views/RCTPointerEvents.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Base/RCTBatchedBridge.m \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Base/RCTAssert.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Base/RCTDefines.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Base/RCTBridge+Private.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Base/RCTBridge.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Base/RCTBridgeModule.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Base/RCTFrameUpdate.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Base/RCTInvalidating.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Base/RCTBridgeMethod.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Base/RCTConvert.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Views/RCTAnimationType.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Views/RCTBorderStyle.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Base/RCTLog.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Base/RCTUtils.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Views/RCTPointerEvents.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Views/RCTTextDecorationLineType.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
   /Users/wengwengweng/Code/awesome-movie/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Base/RCTDisplayLink.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Executors/RCTJSCExecutor.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Base/RCTJavaScriptExecutor.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Base/RCTModuleData.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Base/RCTPerformanceLogger.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Profiler/RCTProfile.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Modules/RCTRedBox.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Base/RCTErrorCustomizer.h \
-  /Users/wengwengweng/Code/awesome-movie/node_modules/react-native/React/Modules/RCTDevLoadingView.h
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Base/RCTDisplayLink.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Executors/RCTJSCExecutor.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Base/RCTJavaScriptExecutor.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Base/RCTModuleData.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Base/RCTPerformanceLogger.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Profiler/RCTProfile.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Modules/RCTRedBox.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Base/RCTErrorCustomizer.h \
+  /Users/wengwengweng/Code/awesome-movie/node_modules/.0.44.0@react-native/React/Modules/RCTDevLoadingView.h
